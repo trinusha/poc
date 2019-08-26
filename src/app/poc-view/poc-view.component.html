@@ -1,0 +1,44 @@
+<form>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Effective Date</th>
+        <th scope="col">Prior Flag</th>
+        <th scope="col">Service Req Num</th>
+        <th scope="col">Type</th>
+        <th scope="col">Sub Type</th>
+        <th scope="col">Status</th>
+        <th scope="col">Doc Priority</th>
+        <th scope="col">Parent Sr</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of crmList">
+        <th scope="row">{{ item.effectiveDate }}</th>
+        <td>
+          <ngb-highlight [result]="item.priorityFlag"></ngb-highlight>
+        </td>
+        <td>
+          <ngb-highlight [result]="item.serviceReqNum"></ngb-highlight>
+        </td>
+        <td>
+          <ngb-highlight [result]="item.type"></ngb-highlight>
+        </td>
+        <td>
+          <ngb-highlight [result]="item.subType"></ngb-highlight>
+        </td>
+        <td>
+          <ngb-highlight [result]="item.status"></ngb-highlight>
+        </td>
+        <td>
+          <ngb-highlight [result]="item.docPriority"></ngb-highlight>
+        </td>
+        <td>
+          <ngb-highlight [result]="item.parentSr"></ngb-highlight>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="d-flex justify-content-between p-2"></div>
+</form>
