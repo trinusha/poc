@@ -7,6 +7,6 @@ import { crmModelList } from './model/crmData';
 })
 export class AppComponent {
   constructor() {
-    console.table(crmModelList);
+    // console.table(crmModelList);
   }
 }
