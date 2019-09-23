@@ -19,7 +19,7 @@ export class RecDescComponent implements OnInit {
       this.route.queryParams.subscribe(ps => {
         const params = Object.values(ps);
         params.forEach(seqNum => {
-          this.tableData.push(res.data.find(x => x.seq === seqNum));
+          this.tableData.push(res.data.find(x => x.srNum === seqNum));
         });
       });
       console.table(this.tableData)

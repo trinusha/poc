@@ -12,19 +12,19 @@
       </thead>
       <tbody>
         <tr>
-          <th scope="row">{{ item.seq }}</th>
+          <th scope="row">{{ item.srNum }}</th>
 
           <td>
-            <a data-toggle="modal" data-target="#myModal"> {{ item.type }}</a>
+            <a data-toggle="modal" data-target="#myModal"> {{ item.srType }}</a>
           </td>
           <td>
-            <ngb-highlight [result]="item.subType"></ngb-highlight>
+            <ngb-highlight [result]="item.srSubType"></ngb-highlight>
           </td>
           <td>
-            <ngb-highlight [result]="item.status"></ngb-highlight>
+            <ngb-highlight [result]="item.srStatus"></ngb-highlight>
           </td>
           <td>
-            <ngb-highlight [result]="item.dept"></ngb-highlight>
+            <ngb-highlight [result]="item.srDept"></ngb-highlight>
           </td>
         </tr>
       </tbody>
