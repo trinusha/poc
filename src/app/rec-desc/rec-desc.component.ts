@@ -16,13 +16,16 @@ export class RecDescComponent implements OnInit {
 
   ngOnInit() {
     this.getInfo.getFilingsData().subscribe(res => {
-      this.route.queryParams.subscribe(ps => {
+      this.route.params.subscribe(ps => {
         const params = Object.values(ps);
-        params.forEach(seqNum => {
-          this.tableData.push(res.data.find(x => x.srNum === seqNum));
-        });
+        const multiParams = params[0].split(',');
+        if (multiParams.length > 0) {
+          multiParams.forEach(seqNum => {
+            this.tableData.push(res.data.find(x => x.srNum === seqNum));
+          });
+        }
       });
-      console.table(this.tableData)
+      console.table(this.tableData);
     });
   }
 }
