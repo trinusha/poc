@@ -15,10 +15,9 @@ export class RecDescComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-  
-      this.route.params.subscribe(ps => {
-        const params = Object.values(ps);
-        this.getInfo.getFilingsData(params).subscribe(res => {
+    this.route.params.subscribe(ps => {
+      const params = Object.values(ps);
+      this.getInfo.getFilingsData(params).subscribe(res => {
         const multiParams = params[0].split(',');
         if (multiParams.length > 0) {
           multiParams.forEach(seqNum => {
@@ -27,5 +26,9 @@ export class RecDescComponent implements OnInit {
         }
       });
     });
+
+    setTimeout(() => {
+      window.print();
+    }, 2000);
   }
 }
