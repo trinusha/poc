@@ -6,7 +6,7 @@ import { HttpHeaders, HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class GetSeqInfoService {
-  baseUrl = 'assets/mock-data.json';
+  baseUrl = 'http://claeft04:8001/selfservice-ms1.0/srList/findNotes';
   constructor(private httpClient: HttpClient) {}
 
   getFilingsData(): Observable<any> {
