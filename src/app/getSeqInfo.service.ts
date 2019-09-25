@@ -6,15 +6,15 @@ import { HttpHeaders, HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class GetSeqInfoService {
-  baseUrl = 'http://claeft04:8001/selfservice-ms1.0/srList/findNotes';
+  baseUrl = 'http://claeft04:8001/selfservice-ms1.0/srList/findNotes/';
   constructor(private httpClient: HttpClient) {}
 
-  getFilingsData(): Observable<any> {
+  getFilingsData(params): Observable<any> {
     const httpOptions = {
       headers: new HttpHeaders({
         Accept: 'application/json'
       })
     };
-    return this.httpClient.get(this.baseUrl, httpOptions);
+    return this.httpClient.get(this.baseUrl+params, httpOptions);
   }
 }
