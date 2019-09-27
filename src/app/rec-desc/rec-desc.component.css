@@ -1,6 +1,12 @@
 .page {
-  padding: 20px;
+  padding: 0px;
 }
-.block {
-  margin-bottom: 25px;
+.notes{
+  align-self: center;
+}
+.notesMain{
+ text-align: center;
+}
+.main{
+  margin: 80px;
 }

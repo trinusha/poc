@@ -1,40 +1,26 @@
-{
-  "data": [
-    {
-      "srNum": "055-109570",
-      "createdBy": "SADMIN",
-      "dept": null,
-      "noteType": "Note",
-      "created": "2009-05-03 08:34:55.0",
-      "srType": "Complaint",
-      "srSubType": "Maintenance Request",
-      "srStatus": "Closed",
-      "srDept": null,
-      "notes": "Need Closet Dr-No Closet Dr                                                     "
-    },
-    {
-      "srNum": "055-109765",
-      "createdBy": "BADMIN",
-      "dept": null,
-      "noteType": "Note",
-      "created": "2009-05-03 08:34:55.0",
-      "srType": "Comp",
-      "srSubType": "Maintenance Request",
-      "srStatus": "Closed",
-      "srDept": null,
-      "notes": "3472304464                                                                      "
-    },
-    {
-      "srNum": "055-111044",
-      "createdBy": "RADMIN",
-      "dept": null,
-      "noteType": "Note",
-      "created": "2009-05-03 08:34:55.0",
-      "srType": "Mopli",
-      "srSubType": "Maintenance Request",
-      "srStatus": "Closed",
-      "srDept": null,
-      "notes": "7183274058                                                                      "
-    }
-  ]
-}
+[
+  {
+    "srNum": "1-49160892523",
+    "createdBy": "NIMRODS",
+    "dept": "Compliance",
+    "noteType": "All",
+    "created": "2019-07-01 19:42:19.0",
+    "srType": "Quality Assurance",
+    "srSubType": "Other",
+    "srStatus": "Closed",
+    "srDept": "Compliance",
+    "notes": "Insufficient  information submitted"
+  },
+  {
+    "srNum": "1-49160892523",
+    "createdBy": "NIMRODS",
+    "dept": "Compliance",
+    "noteType": "All",
+    "created": "2019-07-01 19:54:21.0",
+    "srType": "Quality Assurance",
+    "srSubType": "Other",
+    "srStatus": "Closed",
+    "srDept": "Compliance",
+    "notes": "Insufficient information submitted"
+  }
+]

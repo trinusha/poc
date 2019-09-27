@@ -14,15 +14,26 @@ export class RecDescComponent implements OnInit {
     public getInfo: GetSeqInfoService
   ) {}
 
-  ngOnInit() {
+  ngOnInit() {    
     this.route.params.subscribe(ps => {
       const params = Object.values(ps);
       this.getInfo.getFilingsData(params).subscribe(res => {
         const multiParams = params[0].split(',');
         if (multiParams.length > 0) {
           multiParams.forEach(seqNum => {
-            this.tableData.push(res.find(x => x.srNum === seqNum));
+            let recs = res.filter(x => x.srNum === seqNum);
+            if(recs.length>0){
+              let rec = recs[0];
+              let notesList = [];
+              recs.forEach(element => {
+               notesList.push(element.notes);
+              });
+              rec.notes = notesList;
+              this.tableData.push(rec);      
+            }
           });
+          console.table(this.tableData)
+
         }
       });
     });
