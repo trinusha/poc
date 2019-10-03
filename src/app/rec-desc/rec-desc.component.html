@@ -27,14 +27,19 @@
             <a data-toggle="modal" data-target="#myModal"> {{ (item.srDept===null ? 'No Data':item.srDept)}}</a>
           </td>
         </tr>
-        <th colspan="5" class="notesMain">
-          Notes:
-          <div *ngFor="let note of item.notes">
-            {{note}}
-            <hr>
-          </div>
+        <tr class="notesMain">
+          <th colspan="2" >
+            Notes:          
 
-        </th>
+          </th>
+          <td>
+            <div colspan="3" *ngFor="let note of item.notes">
+                {{note}}
+                
+            </div>
+          </td>
+         
+        </tr>
       </tbody>
     </table>
 

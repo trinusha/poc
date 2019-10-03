@@ -7,11 +7,13 @@ import { PocViewComponent } from './poc-view/poc-view.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RecDescComponent } from './rec-desc/rec-desc.component';
+import { TestComponent } from './test/test.component';
 @NgModule({
    declarations: [
       AppComponent,
       PocViewComponent,
-      RecDescComponent
+      RecDescComponent,
+      TestComponent
    ],
    imports: [
       BrowserModule,

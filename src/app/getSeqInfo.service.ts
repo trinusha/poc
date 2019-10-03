@@ -6,7 +6,7 @@ import { HttpHeaders, HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class GetSeqInfoService {
-  baseUrl = 'http://172.20.212.63:8003/FmwSelfService/GetDetailsFromSR/v1/srList/';
+  baseUrl = 'http://claeft04:8001/selfservice-ms1.0/srList/findNotes/';
   constructor(private httpClient: HttpClient) {}
 
   getFilingsData(params): Observable<any> {
